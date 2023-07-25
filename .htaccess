@@ -1,0 +1,6 @@
+Require all granted
+
+#AuthName "Raspberry pi Turco"
+#AuthUserFile /home/pi/HTML/.htpasswd
+#AuthType Basic
+#Require valid-user

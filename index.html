@@ -1,8 +1,407 @@
-<html>
-    <head>
-        <title>Benvenuto</title>
-    </head>
-    <body>
-        <div align="center">Hello World!</div>
-    </body>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>SW Turco Federico</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link" href="../#">Home <span class="sr-only">(current)</span></a>
+          </li>
+  
+          <li class="nav-item dropdown" aria-labelledby="dropdownMenuButton">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">Software</a>
+
+            <div class="nav-item dropdown-menu">
+                <a class="nav-item dropdown-item" href="ModbusClient/">ModBus Client</a>
+                <a class="nav-item dropdown-item" href="ModBusServerConfigurator/">ModBusServerConfigurator</a>
+                <a class="nav-item dropdown-item" href="ClientPing/">Client Ping</a>
+                <a class="nav-item dropdown-item" href="NetManager/">NetManager</a>
+                <a class="nav-item dropdown-item" href="https://github.com/Fedex1515/Gw_ModBus_TCP-RTU" target="_blank">GW ModBus TCP-RTU</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="attivita">Altre attività</a></li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="autore">Autore</a></li>
+        
+        </li>
+  
+          <!--<li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>-->
+  
+        <!--</ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>-->
+  
+      </div>
+  
+    </nav>
+  </header>
+
+
+
+  <main role="main">
+
+    <!------------------------------------------->
+    <!------------ Box a scorrimento ------------>
+    <!------------------------------------------->
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner">
+
+        <!-- First box -->
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice" focusable="false" role="img" style="padding:auto">
+            <rect width="100%" height="100%" fill="#777" />
+            <!--<image href="modbus_server/images/modbus_server_holding.png" style="width: 40%; height: 40%; margin-left:500px"></image>-->
+          </svg>
+          <div class="container">
+            <div class="carousel-caption">
+              <img onclick="window.location.href='ModbusClient';" src="ModbusClient/images/ModBus_Client_Home_00.PNG"
+                style="width:28%;height:28%;margin-bottom:30px;" />
+              <h1>Modbus Client</h1>
+              <p>Client portable per windows utile per interrogazione dispositivi ModBus</p>
+              <p><a class="btn btn-lg btn-primary" href="ModbusClient/" role="button">Details</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second box -->
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption">
+              <img onclick="window.location.href='ModBusServerConfigurator';" src="ModBusServerConfigurator/images/Screenshot_1.PNG"
+                style="width:28%;height:28%;margin-bottom:30px;" />
+              <h1>ModBusServerConfigurator</h1>
+              <p>Server portable per windows utile per debug di dispositivi ModBus</p>
+              <p><a class="btn btn-lg btn-primary" href="ModBusServerConfigurator/" role="button">Details</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third box -->
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+          <div class="container">
+            <!--<div class="carousel-caption text-right">-->
+            <div class="carousel-caption">
+              <img onclick="window.location.href='ClientPing';" src="ClientPing/images/Tab_1_Home.PNG"
+                style="width:28%;height:28%;margin-bottom:30px;" />
+              <h1>ClientPing</h1>
+              <p>C#/WPF client useful to keep track of network devices in your LAN.
+              </p>
+              <p><a class="btn btn-lg btn-primary" href="ClientPing" role="button">Details</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth box -->
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+            <rect width="100%" height="100%" fill="#777" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption">
+              <img onclick="window.location.href='netmanager';" src="Netmanager/images/netmanager.png"
+                style="width:28%;height:28%;margin-bottom:30px;" />
+              <h1>NetManager</h1>
+              <p>Rapido editor della configurazione statica della propria scheda di rete per switchare in fretta tra
+                diverse reti.</p>
+              <p><a class="btn btn-lg btn-primary" href="Netmanager/" role="button">Dettagli</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth box -->
+       <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+          <rect width="100%" height="100%" fill="#777" />
+        </svg>
+        <div class="container">
+          <!--<div class="carousel-caption text-right">-->
+          <div class="carousel-caption">
+            <img onclick="window.location.href='https://github.com/Fedex1515/ModBus_Server';" src="ModbusServer/images/ModBus_Server_HoldingReg_00.PNG"
+              style="width:28%;height:28%;margin-bottom:30px;" />
+            <h1>ModbusServer</h1>
+            <p>C#/WPF Modbus server/slave simulator.</p>
+            <p><a class="btn btn-lg btn-primary" href="https://github.com/Fedex1515/ModbusServer">Repository Github</a></p>
+          </div>
+        </div>
+      </div>
+        
+      
+      <!-- Sixth box -->
+       <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+          <rect width="100%" height="100%" fill="#777" />
+        </svg>
+        <div class="container">
+          <!--<div class="carousel-caption text-right">-->
+          <div class="carousel-caption">
+            <!--<img onclick="window.location.href='todo';" src="todo"
+              style="width:28%;height:28%;margin-bottom:30px;" />-->
+            <h1>GW ModBus TCP - RTU</h1>
+            <p>Gateway Modbus in python3 che fa da convertitore TCP - RTU.</p>
+            <p><a class="btn btn-lg btn-primary" href="https://github.com/Fedex1515/Gw_ModBus_TCP-RTU">Repository Github</a></p>
+          </div>
+        </div>
+      </div>
+
+
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div class="container marketing">
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Modbus Client<br><span class="text-muted">Windows 7/8/10</span></h2>
+          <p class="lead">Client Modbus che permette di interrogare dispositivi ModBus TCP/IP o RTU (in questo caso è
+            richiesta una USB-485 o altra scheda seriale.</p>
+          <br>
+          <!--<h4>v1.1</h4>-->
+          <button class="btn btn-outline-success my-2 my-sm-0"
+            onclick="window.open('https://github.com/Fedex1515/ModBus_Client');">Details</button>
+          <button class="btn btn-outline-success my-2 my-sm-0"
+            onclick="window.open('./ModbusClient');">Repository</button>
+          <button class="btn btn-outline-success my-2 my-sm-0"
+            onclick="window.open('modbus_client/download/Guida_ModBus_Client_IT.pdf');">Manuale pdf</button>
+        </div>
+        <div class="col-md-5">
+          <svg onclick="window.location.href='modbus_client';"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+            aria-label="Placeholder: 500x500">
+            <title>Placeholder</title>
+            <image href="ModbusClient/images/ModBus_Client_Home_00.PNG" style="width: 100%; height: 100%"></image>
+          </svg>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">ModBusServerConfigurator<br><span class="text-muted">Windows 7/8/10</span></h2>
+          <p class="lead">Server Modbus che simula un server/slave ModBus utile per testare SW di polling su PLC/Master.
+          </p>
+          <br>
+          <!--<h4>v1.1</h4>-->
+          <button class="btn btn-outline-success my-2 my-sm-0"
+            onclick="window.open('https://github.com/Fedex1515/ModBusServerConfigurator');">Repository</button>
+          <!--<button class="btn btn-outline-success my-2 my-sm-0"
+            onclick="window.open('ModBusServerConfigurator/download/Guida_Modbus.pdf');">Download - Manuale pdf</button>-->
+        </div>
+        <div class="col-md-5 order-md-1">
+          <svg onclick="window.location.href='modbus_server';"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+            aria-label="Placeholder: 500x500">
+            <title>Placeholder</title>
+            <image href="ModBusServerConfigurator/images/Screenshot_1.PNG" style="width: 100%; height: 100%"></image>
+          </svg>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">ClientPing<span class="text-muted"></span>
+          </h2>
+          <p class="lead">C#/WPF client useful to keep track of network devices in your LAN</p>
+          <br>
+          <button class="btn btn-outline-success my-2 my-sm-0"
+            onclick="window.open('https://github.com/Fedex1515/Client_PING');">Repository</button>
+          <button class="btn btn-outline-success my-2 my-sm-0"
+            onclick="window.open('https://github.com/Fedex1515/Client_PING');">Download - Manuale pdf</button>
+        </div>
+        <div class="col-md-5">
+          <svg onclick="window.location.href='ModBusServerConfigurator';"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+            aria-label="Placeholder: 500x500">
+            <title>Placeholder</title>
+            <image href="ClientPing/images/Tab_1_Home.PNG" style="width: 100%; height: 100%"></image>
+          </svg>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">NetManager<br><span class="text-muted">Windows 7/8/10</span></h2>
+          <p class="lead">Rapido editor della configurazione statica della propria scheda di rete per switchare in
+            fretta tra diverse reti.</p>
+          <br>
+          <button class="btn btn-outline-success my-2 my-sm-0"
+            onclick="window.open('https://github.com/Fedex1515/NetManager');">Repository</button>
+          <button class="btn btn-outline-success my-2 my-sm-0"
+            onclick="window.open('netmanager/download/Guida_NetManager.pdf');">Download - Manuale pdf</button>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <svg onclick="window.location.href='netmanager';"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+            aria-label="Placeholder: 500x500">
+            <title>Placeholder</title>
+            <image href="netmanager/images/netmanager.png" style="width: 100%; height: 100%"></image>
+          </svg>
+        </div>
+      </div>
+
+
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">ModbusServer<br><span class="text-muted">Windows 7/8/10/11</span>
+          </h2>
+          <p class="lead">This WPF application emulates a single ModBus slave, TCP or RTU. With that you can change memory locations at runtime and view the logs of every query received by the App..</p>
+          <br>
+          <!--<button class="btn btn-outline-success my-2 my-sm-0"
+            onclick="window.open('gw_modbus/download/Guida_Manuale.pdf');">Download - Manuale pdf</button>-->
+          <button class="btn btn-outline-success my-2 my-sm-0"
+            onclick="window.open('https://github.com/Fedex1515/Gw_ModBus_TCP-RTU');">Repository Github</button>
+        </div>
+        <div class="col-md-5">
+          <svg onclick="window.location.href='ModbusServer';"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+            aria-label="Placeholder: 500x500">
+            <title>Placeholder</title>
+            <image href="ModbusServer/images/ModBus_Server_HoldingReg_00.PNG" style="width: 100%; height: 100%"></image>
+          </svg>
+        </div>
+      </div>
+
+
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">GW ModBus TCP - RTU <span class="text-muted">Python3</span>
+          </h2>
+          <p class="lead">Gateway Modbus in python3 che fa da convertitore TCP - RTU.</p>
+          <br>
+          <!--<button class="btn btn-outline-success my-2 my-sm-0"
+            onclick="window.open('gw_modbus/download/Guida_Manuale.pdf');">Download - Manuale pdf</button>-->
+          <button class="btn btn-outline-success my-2 my-sm-0"
+            onclick="window.open('https://github.com/Fedex1515/Gw_ModBus_TCP-RTU');">Repository Github</button>
+        </div>
+        <!--<div class="col-md-5">
+          <svg onclick="window.location.href='todo';"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+            aria-label="Placeholder: 500x500">
+            <title>Placeholder</title>
+            <image href="todo" style="width: 100%; height: 100%"></image>
+          </svg>
+        </div>-->
+      </div>
+      
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+
+
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2020-2021 Turco Federico &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></p>
+    </footer>
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery.slim.min.js"><\/script>')</script>
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+
 </html>
