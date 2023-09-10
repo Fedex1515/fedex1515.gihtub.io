@@ -8,7 +8,7 @@
   <meta name="author" content="">
   <meta name="generator" content="Jekyll v4.0.1">
 
-  <title>ModBus Client</title>
+  <title>Client Ping</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
 
@@ -125,16 +125,16 @@
       <div class="row featurette">
 
         <div class="col-md-5">
-          <h2 class="featurette-heading">Modbus Client<br><span class="text-muted">Windows 7/8/10/11</span></h2>
+          <h2 class="featurette-heading">Client Ping<br><span class="text-muted">Windows 7/8/10/11</span></h2>
           <br>
 
           <!-- Versioni software-->
-          <h4>v2.32</h4>
+          <h4>v1.7</h4>
           <!--<button class="btn btn-outline-success my-2 my-sm-0" onclick="window.open('download/ModBus_v1.1.zip');">Download - Software</button>-->
           <button class="btn btn-outline-success my-2 my-sm-0"
-            onclick="window.open('https://github.com/fedeturco/ModBus_Client');">Download - Software</button>
-          <button class="btn btn-outline-success my-2 my-sm-0"
-            onclick="window.open('download/Guida_ModBus_Client_IT');">Download - Manuale pdf IT</button>
+            onclick="window.open('https://github.com/fedeturco/Client_PING');">Download - Software</button>
+          <!--<button class="btn btn-outline-success my-2 my-sm-0"
+            onclick="window.open('download/Guida_ModBus_Client_IT');">Download - Manuale pdf IT</button>-->
           <!--<button class="btn btn-outline-success my-2 my-sm-0"
             onclick="window.open('download/Guida_Modbus_EN.pdf');">Download - Manuale pdf EN</button>-->
 
@@ -146,20 +146,21 @@
             height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
             role="img" aria-label="Placeholder: 500x500">
             <title>Placeholder</title>
-            <image href="images/ModBus_Client_Home_00.PNG" style="width: 100%; height: 100%"></image>
+            <image href="images/Tab_1_Home_Dark.PNG" style="width: 100%; height: 100%"></image>
           </svg>
         </div>
       </div>
 
       <hr class="featurette-divider">
 
-      <!-- Read/write Coils -->
+      <!-- Tab 1 - Home -->
 
       <div class="row featurette">
         <div class="col-md-5 order-md-2">
-          <h2 class="featurette-heading"><br><span class="text-muted">Read/write coils</span></h2>
+          <h2 class="featurette-heading"><br><span class="text-muted">Home</span></h2>
           <br>
-          <p>Lettura/Scrittura uscite digitali.</p>
+          <p>Homepage with ip list. You can create different profiles for you networks and keep track of your network device as well
+            run custom application passing different parameters as arguments for thirdy part applications. </p>
         </div>
 
         <div class="col-md-7 order-med-1">
@@ -167,18 +168,20 @@
             height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
             role="img" aria-label="Placeholder: 500x500">
             <title>Placeholder</title>
-            <image href="images/ModBus_Client_Coils_00.PNG" style="width: 100%; height: 100%"></image>
+            <image href="images/Tab_1_Home.PNG" style="width: 100%; height: 100%"></image>
           </svg>
         </div>
       </div>
 
-      <!-- Read Inputs -->
+      <!-- Tab 2 - Device View -->
+
+      <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-5">
-          <h2 class="featurette-heading"><br><span class="text-muted">Read inputs</span></h2>
+          <h2 class="featurette-heading"><br><span class="text-muted">Device View</span></h2>
           <br>
-          <p>Lettura/Scrittura ingressi digitali.</p>
+          <p>Detailed description for each device in your network. This view show a more detailed view of the device selected in the homepage.</p>
         </div>
 
         <div class="col-md-7">
@@ -186,18 +189,20 @@
             height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
             role="img" aria-label="Placeholder: 500x500">
             <title>Placeholder</title>
-            <image href="images/ModBus_Client_Inputs_00.PNG" style="width: 100%; height: 100%"></image>
+            <image href="images/Tab_2_Device.PNG" style="width: 100%; height: 100%"></image>
           </svg>
         </div>
       </div>
 
-      <!-- Read/write Input Register -->
+      <!-- Tab 3 - Settings -->
+
+      <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-5 order-md-2">
-          <h2 class="featurette-heading"><br><span class="text-muted">Read input register</span></h2>
+          <h2 class="featurette-heading"><br><span class="text-muted">Settings</span></h2>
           <br>
-          <p>Lettura input digitali</p>
+          <p>In the page settings you can add up to 16 thirdy parts appllication running on a specific ip inserted in the home page.</p>
         </div>
 
         <div class="col-md-7 order-md-1">
@@ -205,18 +210,22 @@
             height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
             role="img" aria-label="Placeholder: 500x500">
             <title>Placeholder</title>
-            <image href="images/ModBus_Client_inputReg_00.PNG" style="width: 100%; height: 100%"></image>
+            <image href="images/Tab_3_Settings.PNG" style="width: 100%; height: 100%"></image>
           </svg>
         </div>
       </div>
 
-      <!-- Read Holding -->
+      <!-- Tab 4 - SCripts -->
+      
+      <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-5">
-          <h2 class="featurette-heading"><br><span class="text-muted">Read/write holding registers</span></h2>
+          <h2 class="featurette-heading"><br><span class="text-muted">Custom scripts</span></h2>
           <br>
-          <p>Lettura/Scrittura registri input/output.</p>
+          <p>You can write custom sripts to run according to the current profile for example to
+            add or remove custom routes. If you need to run these script as admin you must tick 
+          "Run as administrator" in the property of the exe file.</p>
         </div>
 
         <div class="col-md-7">
@@ -224,81 +233,12 @@
             height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
             role="img" aria-label="Placeholder: 500x500">
             <title>Placeholder</title>
-            <image href="images/ModBus_Client_HoldingReg_00.PNG" style="width: 100%; height: 100%"></image>
+            <image href="images/Tab_4_Scripts.PNG" style="width: 100%; height: 100%"></image>
           </svg>
         </div>
       </div>
 
-      <!-- Lista comandi supportati -->
-
       <hr class="featurette-divider">
-
-      <h2>Funzioni supportate</h2>
-
-      <p>Si riporta a seguire la lista dei comandi supportati dal client:</p>
-      <p></p>
-
-      <div class="row featurette">
-        <div class="col-md-6 order-md-2">
-          <h4 class="">FC01<br><span class="text-muted">Read Coil Status</span></h4>
-          <p class="lead">Lettura uscite digitali</p>
-        </div>
-
-        <div class="col-md-6 order-md-2">
-          <h4 class="">FC02<br><span class="text-muted">Read Input Status</span></h4>
-          <p class="lead">Lettura ingressi digitali</p>
-        </div>
-      </div>
-
-      <br>
-
-      <div class="row featurette">
-        <div class="col-md-6 order-md-2">
-          <h4 class="">FC03<br><span class="text-muted">Read Holding Register</span></h4>
-          <p class="lead">Lettura registri I/O</p>
-        </div>
-
-        <div class="col-md-6 order-md-2">
-          <h4 class="">FC04<br><span class="text-muted">Read Input Register</span></h4>
-          <p class="lead">Lettura registri input</p>
-        </div>
-      </div>
-
-      <br>
-
-      <div class="row featurette">
-        <div class="col-md-6 order-md-2">
-          <h4 class="">FC05<br><span class="text-muted">Force Single Coil</span></h4>
-          <p class="lead">Forzatura singola uscita digitale</p>
-        </div>
-
-        <div class="col-md-6 order-md-2">
-          <h4 class="">FC06<br><span class="text-muted">Preset Single Register</span></h4>
-          <p class="lead">Scrittura registri I/O</p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <h2>Altre funzioni di diagnostica</h2>
-
-      <p>Tramite il client è possibile inoltre eseguire comandi di diagnostica verso il dispostivo interrogato:</p>
-      <p></p>
-
-      <div class="row featurette">
-        <div class="col-md-6 order-md-2">
-          <h4 class="">FC08<br><span class="text-muted">Diagnostica</span></h4>
-          <p class="lead">Comandi di diagnostica dello slave ModBus</p>
-
-          <h6></h6>
-        </div>
-
-        <div class="col-md-6 order-md-2">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
     </div><!-- /.container -->
 
     <!-- FOOTER -->
