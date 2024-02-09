@@ -39,50 +39,54 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
+
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
 
           <li class="nav-item active">
             <a class="nav-link" href="../#">Home <span class="sr-only">(current)</span></a>
           </li>
-  
+
           <li class="nav-item dropdown" aria-labelledby="dropdownMenuButton">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                aria-expanded="false">Software</a>
+              aria-expanded="false">Software</a>
 
             <div class="nav-item dropdown-menu">
-                <a class="nav-item dropdown-item" href="../ModbusClient/">ModBus Client</a>
-                <a class="nav-item dropdown-item" href="../ModBusServerConfigurator/">ModBusServerConfigurator</a>
-                <a class="nav-item dropdown-item" href="../ClientPing/">Client Ping</a>
-                <a class="nav-item dropdown-item" href="../NetManager/">NetManager</a>
-                <a class="nav-item dropdown-item" href="https://github.com/fedeturco/Gw_ModBus_TCP-RTU" target="_blank">GW ModBus TCP-RTU</a>
+              <a class="nav-item dropdown-item" href="../ModbusClient/">ModBus Client</a>
+              <a class="nav-item dropdown-item" href="../ModBusServerConfigurator/">ModBusServerConfigurator</a>
+              <a class="nav-item dropdown-item" href="../ClientPing/">Client Ping</a>
+              <a class="nav-item dropdown-item" href="../NetManager/">NetManager</a>
+              <a class="nav-item dropdown-item" href="https://github.com/fedeturco/Gw_ModBus_TCP-RTU" target="_blank">GW
+                ModBus TCP-RTU</a>
             </div>
-        </li>
+          </li>
 
-        <li class="nav-item">
-            <a class="nav-link" href="../attivita">Altre attività</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="../attivita">Altre attività</a>
+          </li>
 
-        <li class="nav-item">
-            <a class="nav-link" href="../autore">Autore</a></li>
-        
-        </li>
-  
+          <li class="nav-item">
+            <a class="nav-link" href="../autore">Autore</a>
+          </li>
+
+          </li>
+
           <!--<li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>-->
-  
-        <!--</ul>
+
+          <!--</ul>
         <form class="form-inline mt-2 mt-md-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>-->
-  
+
       </div>
-  
+
     </nav>
   </header>
 
@@ -132,16 +136,17 @@
           <h4>v2.38</h4>
           <!--<button class="btn btn-outline-success my-2 my-sm-0" onclick="window.open('download/ModBus_v1.1.zip');">Download - Software</button>-->
           <button class="btn btn-outline-success my-2 my-sm-0"
-            onclick="window.open('https://github.com/fedeturco/ModBus_Client/releases/download/2.38/ModBus_Client_v2.38.zip');">Download - Software</button>
-            <br>
+            onclick="window.open('https://github.com/fedeturco/ModBus_Client/releases/download/2.38/ModBus_Client_v2.38.zip');">Download
+            - Software</button>
           <button class="btn btn-outline-success my-2 my-sm-0"
             onclick="window.open('https://github.com/fedeturco/ModBus_Client');">Github - Repository</button>
-            <br><br>
+          <br><br>
           <button class="btn btn-outline-success my-2 my-sm-0"
-            onclick="window.open('https://raw.githubusercontent.com/fedeturco/ModBus_Client/master/ModBus_Client/Manuals/ModBus_Client_EN.pdf');">Download - Manual pdf EN</button>
-            <br>
+            onclick="window.open('https://raw.githubusercontent.com/fedeturco/ModBus_Client/master/ModBus_Client/Manuals/ModBus_Client_EN.pdf');">Manual
+            pdf EN</button>
           <button class="btn btn-outline-success my-2 my-sm-0"
-            onclick="window.open('https://raw.githubusercontent.com/fedeturco/ModBus_Client/master/ModBus_Client/Manuals/ModBus_Client_IT.pdf');">Download - Manuale pdf IT</button>
+            onclick="window.open('https://raw.githubusercontent.com/fedeturco/ModBus_Client/master/ModBus_Client/Manuals/ModBus_Client_IT.pdf');">Manuale
+            pdf IT</button>
           <!--<button class="btn btn-outline-success my-2 my-sm-0"
             onclick="window.open('download/Guida_Modbus_EN.pdf');">Download - Manuale pdf EN</button>-->
 
@@ -153,9 +158,22 @@
             height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
             role="img" aria-label="Placeholder: 500x500">
             <title>Placeholder</title>
-            <image href="images/ModBus_Client_Home_00.PNG" style="width: 100%; height: 100%"></image>
+            <image
+              href="https://raw.githubusercontent.com/fedeturco/ModBus_Client/master/ModBus_Client/Doc/Img/ModBus_Client_Home_Connected_00.PNG"
+              style="width: 100%; height: 100%"></image>
           </svg>
         </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <h5>
+          This client is fully compliant with Modbus specifications, it allows to read and write registers through
+          both Modbus RTU and TCP protocols. The main window contains the basic information to configure
+          the protocol comunication. A USB-485 converter is required to query RTU slaves. Starting from version
+          v2.38 the client implements the new standard Modbus Secure.
+        </h5>
       </div>
 
       <hr class="featurette-divider">
@@ -166,7 +184,7 @@
         <div class="col-md-5 order-md-2">
           <h2 class="featurette-heading"><br><span class="text-muted">Read/write coils</span></h2>
           <br>
-          <p>Lettura/Scrittura uscite digitali.</p>
+          <p>Read and write functions of digital outputs.</p>
         </div>
 
         <div class="col-md-7 order-med-1">
@@ -185,7 +203,7 @@
         <div class="col-md-5">
           <h2 class="featurette-heading"><br><span class="text-muted">Read inputs</span></h2>
           <br>
-          <p>Lettura/Scrittura ingressi digitali.</p>
+          <p>Read functions of digital inputs.</p>
         </div>
 
         <div class="col-md-7">
@@ -193,7 +211,9 @@
             height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
             role="img" aria-label="Placeholder: 500x500">
             <title>Placeholder</title>
-            <image href="images/ModBus_Client_Inputs_00.PNG" style="width: 100%; height: 100%"></image>
+            <image
+              href="https://raw.githubusercontent.com/fedeturco/ModBus_Client/master/ModBus_Client/Doc/Img/ModBus_Client_Inputs_00.PNG"
+              style="width: 100%; height: 100%"></image>
           </svg>
         </div>
       </div>
@@ -202,9 +222,9 @@
 
       <div class="row featurette">
         <div class="col-md-5 order-md-2">
-          <h2 class="featurette-heading"><br><span class="text-muted">Read input register</span></h2>
+          <h2 class="featurette-heading"><br><span class="text-muted">Read/wire holding register</span></h2>
           <br>
-          <p>Lettura input digitali</p>
+          <p>Read and write of analog outputs</p>
         </div>
 
         <div class="col-md-7 order-md-1">
@@ -212,7 +232,9 @@
             height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
             role="img" aria-label="Placeholder: 500x500">
             <title>Placeholder</title>
-            <image href="images/ModBus_Client_inputReg_00.PNG" style="width: 100%; height: 100%"></image>
+            <image
+              href="https://raw.githubusercontent.com/fedeturco/ModBus_Client/master/ModBus_Client/Doc/Img/ModBus_Client_HoldingReg_00.PNG"
+              style="width: 100%; height: 100%"></image>
           </svg>
         </div>
       </div>
@@ -221,9 +243,9 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <h2 class="featurette-heading"><br><span class="text-muted">Read/write holding registers</span></h2>
+          <h2 class="featurette-heading"><br><span class="text-muted">Read input registers</span></h2>
           <br>
-          <p>Lettura/Scrittura registri input/output.</p>
+          <p>Read of analog inputs</p>
         </div>
 
         <div class="col-md-7">
@@ -231,7 +253,9 @@
             height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
             role="img" aria-label="Placeholder: 500x500">
             <title>Placeholder</title>
-            <image href="images/ModBus_Client_HoldingReg_00.PNG" style="width: 100%; height: 100%"></image>
+            <image
+              href="https://raw.githubusercontent.com/fedeturco/ModBus_Client/master/ModBus_Client/Doc/Img/ModBus_Client_InputReg_00.PNG"
+              style="width: 100%; height: 100%"></image>
           </svg>
         </div>
       </div>
@@ -240,20 +264,19 @@
 
       <hr class="featurette-divider">
 
-      <h2>Funzioni supportate</h2>
+      <h2>Supported functions:</h2>
+      <br>
 
-      <p>Si riporta a seguire la lista dei comandi supportati dal client:</p>
-      <p></p>
-
+      <div class="row featurette"></div>
       <div class="row featurette">
         <div class="col-md-6 order-md-2">
           <h4 class="">FC01<br><span class="text-muted">Read Coil Status</span></h4>
-          <p class="lead">Lettura uscite digitali</p>
+          <p class="lead">Read digitali outputs</p>
         </div>
 
         <div class="col-md-6 order-md-2">
           <h4 class="">FC02<br><span class="text-muted">Read Input Status</span></h4>
-          <p class="lead">Lettura ingressi digitali</p>
+          <p class="lead">Read digital inputs</p>
         </div>
       </div>
 
@@ -262,12 +285,12 @@
       <div class="row featurette">
         <div class="col-md-6 order-md-2">
           <h4 class="">FC03<br><span class="text-muted">Read Holding Register</span></h4>
-          <p class="lead">Lettura registri I/O</p>
+          <p class="lead">Read input/output registers</p>
         </div>
 
         <div class="col-md-6 order-md-2">
           <h4 class="">FC04<br><span class="text-muted">Read Input Register</span></h4>
-          <p class="lead">Lettura registri input</p>
+          <p class="lead">Read input registers</p>
         </div>
       </div>
 
@@ -276,31 +299,89 @@
       <div class="row featurette">
         <div class="col-md-6 order-md-2">
           <h4 class="">FC05<br><span class="text-muted">Force Single Coil</span></h4>
-          <p class="lead">Forzatura singola uscita digitale</p>
+          <p class="lead">Write single output</p>
         </div>
 
         <div class="col-md-6 order-md-2">
           <h4 class="">FC06<br><span class="text-muted">Preset Single Register</span></h4>
-          <p class="lead">Scrittura registri I/O</p>
+          <p class="lead">Write single register</p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row featurette">
+        <div class="col-md-6 order-md-2">
+          <h4 class="">FC15<br><span class="text-muted">Force Multiple Coils</span></h4>
+          <p class="lead">Write multiple outputs</p>
+        </div>
+
+        <div class="col-md-6 order-md-2">
+          <h4 class="">FC16<br><span class="text-muted">Preset Multiple Registers</span></h4>
+          <p class="lead">Write multiple registers</p>
         </div>
       </div>
 
       <hr class="featurette-divider">
 
-      <h2>Altre funzioni di diagnostica</h2>
+      <h2>Diagnostic functions</h2>
 
-      <p>Tramite il client è possibile inoltre eseguire comandi di diagnostica verso il dispostivo interrogato:</p>
+      <p>In the diagnostics tab, diagnostic commands can be sent to the queried device, be aware that not all
+        devices respond to the FC08 function:</p>
       <p></p>
 
-      <div class="row featurette">
-        <div class="col-md-6 order-md-2">
-          <h4 class="">FC08<br><span class="text-muted">Diagnostica</span></h4>
-          <p class="lead">Comandi di diagnostica dello slave ModBus</p>
+      <br>
 
+      <div class="row featurette">
+        <div class="col-md-12 order-md-12">
+          <h4 class="">FC08<br><span class="text-muted">Diagnostic</span></h4>
+          <br>
+          <p class="lead">Supported diagnostic functions:</p>
+          <br>
+          <div class="row featurette">
+            <div class="col-md-6 order-md-2">
+              <p>- 00 Return Query Data</p>
+              <p>- 01 Restart Comunications Option</p>
+              <p>- 02 Return Diagnostic Register</p>
+              <p>- 03 Change ASCII Input Delimeter</p>
+              <p>- 04 Force Listen Only Mode</p>
+              <p>- 10 Clear Counters and Diagnostic Register</p>
+              <p>- 11 Return Bus Message Count</p>
+              <p>- 12 Return Bus Comunication Error Count</p>
+            </div>
+            <div class="col-md-6 order-md-2">
+              <p>- 13 Return Bus Exception Error Count</p>
+              <p>- 14 Return Slave Message Count</p>
+              <p>- 15 Return Slave No Response Count</p>
+              <p>- 16 Return Slave NAK Count</p>
+              <p>- 17 Return Slave Busy Count</p>
+              <p>- 20 Clear Overrun Counter and Flag</p>
+            </div>
+          </div>
           <h6></h6>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-6 order-md-2">  
+        <h2 style="margin-top: 150px;">Modbus Secure</h2>
+        <h3>TLS v1.2 with x.509 certificate</h3>
+          <br>
+          <p>Starting with version 2.38, support has been introduced for the ModBus Secure standard, according to
+            the specifications described in the document MB-TCP-Security-v21_2018-07-24.</p>
         </div>
 
         <div class="col-md-6 order-md-2">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="450"
+            height="450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+            role="img" aria-label="Placeholder: 500x500">
+            <title>Placeholder</title>
+            <image
+              href="https://raw.githubusercontent.com/fedeturco/ModBus_Client/master/ModBus_Client/Doc/Img/ModBus_Home_Secure.PNG"
+              style="width: 100%; height: 100%"></image>
+          </svg>
         </div>
       </div>
 
@@ -309,10 +390,11 @@
     </div><!-- /.container -->
 
     <!-- FOOTER -->
-<footer class="container">
-  <p class="float-right"><a href="#">Back to top</a></p>
-  <p>&copy; 20243 Turco Federico &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../terms.html">Terms</a></p>
-</footer>
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2024 Turco Federico &middot; <a href="../privacy.html">Privacy</a> &middot; <a
+          href="../terms.html">Terms</a></p>
+    </footer>
 
   </main>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
